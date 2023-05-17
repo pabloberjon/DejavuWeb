@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  background-image: url("img/Portada1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
+nav {
+  margin: 50px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-size: 18px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+form {
+  width: 400px;
+  margin: 50px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
