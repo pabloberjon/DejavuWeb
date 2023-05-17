@@ -37,8 +37,7 @@ rotateText.addEventListener("click", function () {
   } else if (currentText === "Contacto") {
     rotateText.href = "contacto.html";
   } else if (currentText === "Instagram") {
-    rotateText.href =
-      "https://instagram.com/deja_vu_photographs?igshid=MTIyMzRjYmRlZg==";
+    rotateText.href = href = "https://www.instagram.com/deja_vu_photographs/";
     rotateText.target = "_blank";
   }
 });
