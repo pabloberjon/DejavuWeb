@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Saira+Extra+Condensed:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -7,25 +7,27 @@
 
 body {
   font-family: sans-serif;
-  color: #fff;
+  color: #000;
+  height: 90vh;
+}
+
+header {
+  height: 100%;
   background-image: url("img/Portada1.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .logo-container {
   display: flex;
-  margin-bottom: 10px;
-  align-items: center;
-  justify-content: center;
+  padding-left: 5%;
+  padding-top: 2%;
 }
 
 .logo {
   width: 150px;
   height: 100px;
-
   opacity: 0.7;
   border-radius: 5px;
 }
@@ -41,15 +43,28 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 18px;
+  font-size: 30px;
+  font-family: "Dancing Script";
+  background-color: #f4d03f;
+  padding: 5px;
 }
 
 nav ul li a {
   text-decoration: none;
+  color: #000;
+}
+
+header h1 {
+  font-size: 80px;
+  font-family: "Dancing Script";
+  text-align: center;
+  align-items: center;
+  margin-top: 13%;
   color: #fff;
 }
 
 article {
+  background-color: #424949;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,19 +72,22 @@ article {
   height: 70vh;
 }
 
-article h1 {
-  font-size: 80px;
-  margin-bottom: 100px;
-  font-family: "Dancing Script";
+article div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-article p {
-  font-size: 20px;
-  width: 50%;
+article div p {
+  font-family: "Saira Extra Condensed";
+  margin-left: 5%;
+  font-size: 24px;
+  text-align: justify;
+  width: 30%;
+  color: #fff;
 }
 
-article img {
+article div img {
   width: 300px;
-  border-radius: 100%;
   margin-bottom: 20px;
 }

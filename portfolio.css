@@ -1,29 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Hedvig+Letters+Serif:opsz@12..24&family=Saira+Extra+Condensed:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: sans-serif;
-  color: #fff;
+  color: #000;
+  height: 90vh;
+}
+
+header {
+  height: 100%;
   background-image: url("img/Portada1.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .logo-container {
   display: flex;
-  margin-bottom: 10px;
-  align-items: center;
-  justify-content: center;
+  padding-left: 5%;
+  padding-top: 2%;
 }
 
 .logo {
   width: 150px;
   height: 100px;
-
   opacity: 0.7;
   border-radius: 5px;
 }
@@ -39,45 +42,74 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 18px;
+  font-size: 30px;
+  font-family: "Dancing Script";
+  background-color: #f4d03f;
+  padding: 5px;
 }
 
 nav ul li a {
   text-decoration: none;
+  color: #000;
+}
+
+header h1 {
+  font-size: 80px;
+  font-family: "Dancing Script";
+  text-align: center;
+  align-items: center;
+  margin-top: 13%;
   color: #fff;
 }
 
 main {
+  background-color: #424949;
+  font-family: "Hedvig Letters Serif";
+}
+
+.picturesContainer {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.wordsFilter {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
-}
-
-article {
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 20%;
+  padding: 15px 0;
 }
 
-article a {
-  text-decoration: none;
+.wordsFilter p {
+  margin: 0 10px;
+  padding: 10px;
   color: #fff;
-  border: #fff 1px solid;
-  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-article a img {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+.wordsFilter p:hover {
+  background-color: #333;
 }
 
-article a p {
-  border-top: 1px #fff solid;
-  text-align: center;
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px; /* Compensar el margen negativo */
+}
+
+.picture {
+  position: relative;
+  width: calc(
+    33.33% - 10px
+  ); /* 33.33% para tres por línea, restamos el doble del margen para compensar */
+  margin: 5px;
+  overflow: hidden;
+  box-sizing: border-box; /* Evitar que el margen afecte el ancho total */
+}
+
+.picture img {
+  width: 100%;
+  height: auto; /* Mantener la proporción */
+  display: block;
 }

@@ -1,3 +1,26 @@
+const rotateText = document.getElementById("rotate-text");
+const mainArticle = document.querySelector("body");
+const texts = ["Portfolio", "Contacto", "Sobre mí"];
+let index = 0;
+
+function changeText() {
+  rotateText.textContent = texts[index];
+  const currentText = rotateText.textContent;
+
+  if (currentText === "Sobre mí") {
+    mainArticle.style.backgroundImage = "url('img/Mishell.jpeg')";
+    rotateText.href = "sobreMi.html";
+  } else if (currentText === "Portfolio") {
+    mainArticle.style.backgroundImage = "url('img/PaisajePortada.jpeg')";
+    rotateText.href = "portfolio.html";
+  } else if (currentText === "Contacto") {
+    mainArticle.style.backgroundImage = "url('img/LightpaintingPortada.jpeg')";
+    rotateText.href = "contacto.html";
+  }
+
+  index = (index + 1) % texts.length;
+}
+
 function startTyping() {
   const text = "Mishell Farinango";
   const typingText = document.getElementById("typing-text");
@@ -8,7 +31,7 @@ function startTyping() {
     index++;
     if (index > text.length) {
       clearInterval(typingInterval);
-      setTimeout(startTyping, 5000); // Repetir cada 3 segundos (ajusta el valor según tus necesidades)
+      setTimeout(startTyping, 8000); // Repetir cada 8 segundos (ajusta el valor según tus necesidades)
     }
   }
 
@@ -17,27 +40,9 @@ function startTyping() {
 
 startTyping();
 
-const rotateText = document.getElementById("rotate-text");
-const texts = ["Portfolio", "Contacto", "Instagram", "Sobre mí"];
-let index = 0;
-
-function changeText() {
-  rotateText.textContent = texts[index];
-  index = (index + 1) % texts.length;
-}
-
-setInterval(changeText, 8000);
+setInterval(changeText, 8000); // Ajusta el intervalo de cambio de texto
 
 rotateText.addEventListener("click", function () {
-  const currentText = rotateText.textContent;
-  if (currentText === "Sobre mí") {
-    rotateText.href = "sobreMi.html";
-  } else if (currentText === "Portfolio") {
-    rotateText.href = "portfolio.html";
-  } else if (currentText === "Contacto") {
-    rotateText.href = "contacto.html";
-  } else if (currentText === "Instagram") {
-    rotateText.href = href = "https://www.instagram.com/deja_vu_photographs/";
-    rotateText.target = "_blank";
-  }
+  // Realizar el cambio al hacer clic en el texto
+  changeText();
 });
