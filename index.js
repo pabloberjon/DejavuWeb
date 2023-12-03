@@ -41,8 +41,3 @@ function startTyping() {
 startTyping();
 
 setInterval(changeText, 8000); // Ajusta el intervalo de cambio de texto
-
-rotateText.addEventListener("click", function () {
-  // Realizar el cambio al hacer clic en el texto
-  changeText();
-});
