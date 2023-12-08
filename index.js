@@ -8,7 +8,7 @@ function changeText() {
   const currentText = rotateText.textContent;
 
   if (currentText === "Sobre mí") {
-    mainArticle.style.backgroundImage = "url('img/Mishell.jpeg')";
+    mainArticle.style.backgroundImage = "url('img/light1.jpeg')";
     rotateText.href = "sobreMi.html";
   } else if (currentText === "Portfolio") {
     mainArticle.style.backgroundImage = "url('img/PaisajePortada.jpeg')";
